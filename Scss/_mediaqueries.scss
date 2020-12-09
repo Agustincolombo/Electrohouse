@@ -1,0 +1,88 @@
+/*Condiciones navegador en celular*/
+@media only screen and (max-width:576px){
+    nav {
+        font-size: $porcentajeFuenteMobile ;
+        strong {
+            width: 30%;
+            margin-left: 5%;
+        }
+    }
+    footer {
+        font-size: $porcentajeFuenteMobile;
+    }
+    .navbar_img {
+        width: $medidaFotoNavMobile;
+    }
+    .header_navbar {
+        font-size: $porcentajeFuenteMobile;
+    }
+}
+/*Condiciones header en celular*/
+@media only screen and (max-width:1200px) {
+    #presentacion {
+        font-size: $porcentajeFuenteMobile;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'main'
+        'aside'
+        'navbar';
+        main {
+            justify-self: center;
+        }
+        section {
+            width: 100%;
+            text-align: center;
+            padding-top:5%;
+        }
+    }
+}
+/* Condiciones imagenes menu en celular*/
+@media only screen and (max-width:1200px) {
+    #imagenesLugares {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        justify-items: center;
+        grid-row-gap: 2%;
+    }
+}
+@media only screen and (max-width:992px) {
+    .contenido_imagenes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr;
+        justify-items: center;
+        grid-row-gap: 2%;
+    }
+}
+@media only screen and (max-width:576px){
+    .img-fluid {
+        width: 85%;
+    }
+    .contenido_card {
+        width: $medidaFotoCardMobile;
+    }
+/*Condiciones iframes de biografias en celular*/
+    .biografias_iframes {
+        width: 340px;
+        height: 235px;
+    }
+}
+/*Condiciones imagenes dj de biografias en celular*/
+@media only screen and (max-width:767px){
+    .biografias_foto {
+        margin-left: 2%;
+        width: $medidaFotoBio/2;
+        height: auto;
+    }
+    .biografias_texto {
+        margin-left: 2%;
+    }
+    .biografias_articulos {
+        padding-bottom:0% ;
+    }
+    .biografias_iframes {
+        padding-bottom: 5%;
+    }
+}

@@ -1,0 +1,97 @@
+/*Titulos y fuentes*/
+.titulo {
+    text-align:center;
+    font-size:150%;
+    font-family:'Roboto Slab', serif;
+}
+.subtitulo {
+    font-size:120%;
+}
+/*Condiciones del body y elementos*/
+body {
+    background-color:#DAE3E5;
+    font-family: 'Roboto', sans-serif;
+}
+#comunidad {
+    background-image:url(../Img/fondoComunidad3.jpg);
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    border-radius: 25px;
+    margin: 3.5%;
+}
+.contenido_card {
+    width:$medidaFotoCard;
+}
+.contenido_subtitulo {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0px 5px 0px;
+}
+#tabla {
+    display: flex;
+    justify-content: center; 
+}
+a:link {
+    color: #616164;
+    text-decoration:none;
+}
+a:visited {
+    color:  #616164;
+}
+a:hover {
+    color: rgb(252, 0, 0);
+}
+h3 {
+    margin:1%;
+}
+h4 {
+    transition: transform 0.5s;
+}
+h4:hover {
+   transform: scale(1.35);
+}
+.card {
+    position: initial;
+}
+/*Biografias*/
+.biografias_iframes{
+    width:420px;
+    height:315px;
+}
+.biografias_cont_iframes {
+    display: flex;
+    justify-content: center;
+}
+.nopadding_columnas {
+    padding:0px;
+    position: initial;
+}
+.biografias_articulos {
+    padding-bottom:5%;
+}
+.biografias_articulos_claro {
+    padding-bottom:5%;
+}
+.biografia_fila {
+    margin: 0px;
+}
+/*Imagenes*/
+.contenido_imagenes {
+    @include position-img-index;
+}
+.img-fluid {
+    max-width: 420px;
+    height: auto;
+}
+.navbar_img {
+    margin-top: 35%;
+    width:$medidaFotoNav;
+}
+.biografias_foto {
+    width: $medidaFotoBio;
+    height: auto;
+}

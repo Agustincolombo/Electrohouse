@@ -1,0 +1,174 @@
+<!doctype html> 
+<html lang="es">  
+    <head>  
+        <meta charset="UTF-8">
+        <meta nam="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Electro-house | Tu música electrónica</title>
+        <meta name='keywords' content="Musica, musica electronica, fiestas, entradas, comunidad, artistas, djs, House">
+        <meta name="description" content="Conoce música electrónica y a tus artistas favoritos, compra tus entradas, escucha artistas nuevos o hazte conocer en nuestra comunidad.">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel='stylesheet' href='css/estilosnode.css'>
+    </head>
+    <body>
+<!--Encabezado y accesos directos a redes sociales -->
+        <nav> 
+            <strong>
+                <a href='Secciones/entradas.html'>¡Compra de entradas!</a>
+            </strong>
+            <h1 class='titulo navbar_titulo'>Electro-house</h1>
+            <ul class='navbar_listas'>
+                <li class='inline navbar_item'>
+                    <a class="navbar_link" href="https://www.twitter.com" target="_blank">
+                        <img class='navbar_img' src="Img/twitter-icon.png" alt='Icono de Twitter'>
+                    </a>    
+                </li>
+                <li class='inline navbar_item'>
+                    <a class="navbar_link" href='https://www.instagram.com' target="_blank">
+                        <img class='navbar_img' src='Img/instagram-icon.png' alt='Icono de Instagram'>
+                    </a>
+                </li>
+                <li class='inline navbar_item'>
+                    <a class="navbar_link" href='https://www.spotify.com' target="_blank">
+                        <img class='navbar_img' src="Img/spotify-icon.png" alt='Icono de Spotify'>
+                    </a>
+                </li>
+            </ul> 
+        </nav>
+<!--Logo, objetivos y contenido -->    
+        <header class="jumbotron header_jumbotron" id=presentacion>   
+            <main class='header_main'>
+                <img class='header_logo' src='img/logo1.png' alt='Logo de la pagina'>
+            </main>
+            <section>
+                <p class='header_texto'>En Electro-House buscamos reunir a todo el público apasionado por la música electrónica que desea conocer un poco mas sobre este hermoso mundo. Artistas conocidos y por conocer, música de distintos géneros y subgéneros, entradas y más... </p>
+            </section>
+<!--Lista con los enlaces a cada pagina-->    
+            <navbar>
+                <ul class='header_lista'>
+                    <li class='header_item'>
+                        <a class='header_link' href='index.html'>Menu</a>
+                    </li>
+                    <li class='header_item'>
+                        <a class='header_link' href='Secciones/biografias.html'>Biografias</a>
+                    </li>
+                    <li class='header_item'>
+                        <a class='header_link' href='Secciones/entradas.html'>Entradas</a>
+                    </li>
+                    <li class='header_item'>
+                        <a class='header_link' href='Secciones/generos_subgeneros.html'>Generos</a>
+                    </li>
+                    <li class='header_item'>
+                        <a class='header_link' href='Secciones/comunidad.html'>Comunidad</a>
+                    </li>
+                </ul>
+            </navbar>
+        </header>
+<!--Djs populares, imagenes de ellos y link de wireframe 'Generos y subgeneros'-->
+        <section class='contenido_djs'>
+            <h2 class='titulo contenido_titulo'>Biografias</h2>
+            <strong class='subtitulo contenido_subtitulo'>Djs populares</strong>
+            <div class='contenido_imagenes'>
+                <article class="card bg-light contenido_card">
+                    <img class="card-img-top contenido_imagen_dj" data-aos="fade-up" data-aos-delay="350" src='img/djs/Hernan_Cattaneo_2014_600.jpg'> 
+                    <section class='card-body contenido_cuerpo-card'>
+                        <a href='Secciones/biografias.html#Hernan_Cattaneo' class="card-text contenido_card_link">Hernan Cattaneo</a>
+                    </section>
+                </article>
+                <article class="card contenido_card">
+                    <img class="card-img-top contenido_imagen_dj" data-aos="fade-up" data-aos-delay="400" src='img/djs/Green-velvet1.jpg'>
+                    <section class='card-body contenido_cuerpo-card'>
+                        <a class="card-text contenido_card_link" href='Secciones/biografias.html#Green_Velvet'>Green Velvet</a>
+                    </section>
+                </article> 
+                <article class="card bg-light contenido_card">
+                    <img class="card-img-top contenido_imagen_dj" data-aos="fade-up" data-aos-delay="450" src='img/djs/Charlotte-De-Witte.jpg'>
+                    <section class='card-body contenido_cuerpo-card'>
+                        <a class="card-text contenido_card_link" href='Secciones/biografias.html#Charlotte_De_Witte'>Charlotte De Witte</a>
+                    </section>
+                </article>
+            </div> 
+        </section>
+<!--Venta de entradas, imagenes de los lugares y link de wireframe 'Entradas'-->
+        <section>
+            <h3 class=titulo>Entradas</h3>
+            <div class='contenido_imagenes' id=imagenesLugares>
+                <img class="img-fluid" data-aos="fade-up" data-aos-delay="350" src='img/orfeoSuperDomo.jpg' alt='Imagen de Orfeo Superdomo'>
+                <img class="img-fluid" data-aos="fade-up" data-aos-delay="400" src='img/La_estacion.jpg' alt='Imagen de La Estacion'>
+                <img class="img-fluid" data-aos="fade-up" data-aos-delay="450" src='Img/Forja.jpg' alt='Imagen de Forja Indoor'>    
+            </div>
+<!--Tabla de eventros proximos-->
+            <article id=tabla>
+                <table class='table-responsive-sm table-dark' border="2" cellpadding='5' cellspacing='2'>
+                    <thead>
+                        <th>Fecha y hora</th>
+                        <th>Djs participantes</th>
+                        <th>Lugar</th>
+                        <th>Precio</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15/03/2021 22:00</td>
+                            <td> 
+                                <ol class='nav flex-column'>
+                                    <li class="nav-item">Jeremy Olander</a></li>
+                                    <li class="nav-item">Sebastien Leger</a></li>
+                                </ol>
+                            </td>
+                            <td>Orfeo Superdomo</td>
+                            <td><a href=Secciones/entradas.html>$3800</a></td>
+                        </tr>
+                        <tr>
+                            <td>20/04/2021 01:00</td>
+                            <td>
+                                <ol class='nav flex-column'>
+                                    <li class="nav-item">Green Velvet</a></li>
+                                    <li class="nav-item">Nico Hamuy</a></li>
+                                </ol>
+                            </td>
+                            <td>Comuna San Roque</td>
+                            <td><a href=Secciones/entradas.html>$2200</a></td>
+                        </tr>
+                        <tr>
+                            <td>07/05/2021 15:00</td>
+                            <td>
+                                <ol class='nav flex-column'>
+                                    <li class="nav-item">Hernan Cattaneo</a></li>
+                                    <li class="nav-item">Nick Warren</a></li>
+                                </ol>
+                            </td>
+                            <td>Forja Indoor</td>
+                            <td><a href=Secciones/entradas.html>$4200</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+<!--Comunidad, logo y link de wireframe 'Comunidad'-->
+        <section id=comunidad>
+            <h4 class="titulo"> 
+                <a id='comunidadLink' href=secciones/comunidad.html>Comunidad</a>
+            </h4>
+        </section>
+<!--Pie de pagina-->
+        <footer>
+            <strong class='titulo contacto1'>Contacto</strong>
+            <strong class='titulo contacto2'>Redes sociales</strong>
+            <strong class='titulo contacto3'>Informacion adicional</strong>
+            <p class='detalleContacto1'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi illum laudantium perferendis non dolores aliquid magnam. Nihil animi praesentium ex.</p>
+            <p class='detalleContacto2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad non consectetur tempora qui nulla. Nostrum voluptates delectus repudiandae eaque perspiciatis?</p>
+            <p class='detalleContacto3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque rerum, accusamus minima atque est fugit beatae temporibus distinctio perferendis nulla?</p>
+        </footer>
+<!--Scripts-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>

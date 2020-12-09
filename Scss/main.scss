@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'bodyElementos';
+@import 'header_footer';
+@import 'mediaqueries';
+
+/*Barra de navegacion*/
+nav {
+    background-color: #04080F;
+    height:10vh;
+    width:100%;
+    color:$colorDeFuente;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    strong {
+        margin-left: 1%;
+    }
+    h1 {
+        display: inline-block;
+        animation:flash infinite 4s;
+    }
+}
+/*Navbar vertical biografias*/
+.navbar_biografia {
+    height: 50%;
+    position: initial;
+}

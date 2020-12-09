@@ -1,0 +1,75 @@
+/*Grid header*/
+#presentacion {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr;
+    grid-column-gap: 5%;
+    grid-template-areas: 
+        'main aside'
+        'navbar navbar';
+    /*background-color: #F0E68C;*/
+    background-color: #a1c6ea;
+    main {
+        grid-area: main;
+        justify-self: flex-end;
+    }
+    section {
+        grid-area: aside;
+        justify-self: flex-start;
+        font-size: 170%;
+        line-height: 1.38;
+        width: 50%;
+        animation: fadeInRight;
+        animation-duration: 1s;
+    }
+    img {
+        width: 350px;
+        height: 350px;
+        animation:fadeInLeft;
+        animation-duration: 1s;
+    }
+    navbar {
+        grid-area: navbar;
+    }
+}
+.navbar_item {
+    display: inline-block;
+}
+.header_item {
+    display: inline-block;
+}
+.header_lista {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 20px 40px 20px;
+    padding:10px 20px 10px 20px;
+    border:outset #507dbc;
+    background-color: #bbd1ea;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+}
+/*Grid Footer*/
+footer {
+    color:#B3B3BA;
+    /*background-color: #17a2b8;*/
+    background-color: #507dbc;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,0.4fr);
+    grid-column-gap:10%;
+    justify-items: start;
+    grid-template-areas:
+    'contacto1 contacto2 contacto3'
+    'detalleContacto1 detalleContacto2 detalleContacto3';
+}
+.contacto1 {
+    margin-left:5%;
+}
+.detalleContacto1 {
+    margin-left: 5%;
+}
+.contacto3 {
+    margin-right: 5%;
+}
+.detalleContacto3 {
+    margin-right: 5%;
+}

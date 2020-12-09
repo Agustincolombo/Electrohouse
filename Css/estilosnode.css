@@ -1,0 +1,256 @@
+/*Variables medidas imagenes*/
+/*Variables Bootstrap*/
+/*Mixins imagenes*/
+/*Titulos y fuentes*/
+.titulo {
+  text-align: center;
+  font-size: 150%;
+  font-family: 'Roboto Slab', serif; }
+
+.subtitulo {
+  font-size: 120%; }
+
+/*Condiciones del body y elementos*/
+body {
+  background-color: #DAE3E5;
+  font-family: 'Roboto', sans-serif; }
+
+#comunidad {
+  background-image: url(../Img/fondoComunidad3.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border-radius: 25px;
+  margin: 3.5%; }
+
+.contenido_card {
+  width: 400px; }
+
+.contenido_subtitulo {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0px 5px 0px; }
+
+#tabla {
+  display: flex;
+  justify-content: center; }
+
+a:link {
+  color: #616164;
+  text-decoration: none; }
+
+a:visited {
+  color: #616164; }
+
+a:hover {
+  color: #fc0000; }
+
+h3 {
+  margin: 1%; }
+
+h4 {
+  transition: transform 0.5s; }
+
+h4:hover {
+  transform: scale(1.35); }
+
+.card {
+  position: initial; }
+
+/*Biografias*/
+.biografias_iframes {
+  width: 420px;
+  height: 315px; }
+
+.biografias_cont_iframes {
+  display: flex;
+  justify-content: center; }
+
+.nopadding_columnas {
+  padding: 0px;
+  position: initial; }
+
+.biografias_articulos {
+  padding-bottom: 5%; }
+
+.biografias_articulos_claro {
+  padding-bottom: 5%; }
+
+.biografia_fila {
+  margin: 0px; }
+
+/*Imagenes*/
+.contenido_imagenes {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px 50px 0px; }
+
+.img-fluid {
+  max-width: 420px;
+  height: auto; }
+
+.navbar_img {
+  margin-top: 35%;
+  width: 50px; }
+
+.biografias_foto {
+  width: 95%;
+  height: auto; }
+
+/*Grid header*/
+#presentacion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.4fr;
+  grid-column-gap: 5%;
+  grid-template-areas: 'main aside' 'navbar navbar';
+  /*background-color: #F0E68C;*/
+  background-color: #a1c6ea; }
+  #presentacion main {
+    grid-area: main;
+    justify-self: flex-end; }
+  #presentacion section {
+    grid-area: aside;
+    justify-self: flex-start;
+    font-size: 170%;
+    line-height: 1.38;
+    width: 50%;
+    animation: fadeInRight;
+    animation-duration: 1s; }
+  #presentacion img {
+    width: 350px;
+    height: 350px;
+    animation: fadeInLeft;
+    animation-duration: 1s; }
+  #presentacion navbar {
+    grid-area: navbar; }
+
+.navbar_item {
+  display: inline-block; }
+
+.header_item {
+  display: inline-block; }
+
+.header_lista {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 20px 40px 20px;
+  padding: 10px 20px 10px 20px;
+  border: outset #507dbc;
+  background-color: #bbd1ea;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4); }
+
+/*Grid Footer*/
+footer {
+  color: #B3B3BA;
+  /*background-color: #17a2b8;*/
+  background-color: #507dbc;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 0.4fr);
+  grid-column-gap: 10%;
+  justify-items: start;
+  grid-template-areas: 'contacto1 contacto2 contacto3' 'detalleContacto1 detalleContacto2 detalleContacto3'; }
+
+.contacto1 {
+  margin-left: 5%; }
+
+.detalleContacto1 {
+  margin-left: 5%; }
+
+.contacto3 {
+  margin-right: 5%; }
+
+.detalleContacto3 {
+  margin-right: 5%; }
+
+/*Condiciones navegador en celular*/
+@media only screen and (max-width: 576px) {
+  nav {
+    font-size: 80%; }
+    nav strong {
+      width: 30%;
+      margin-left: 5%; }
+  footer {
+    font-size: 80%; }
+  .navbar_img {
+    width: 25px; }
+  .header_navbar {
+    font-size: 80%; } }
+
+/*Condiciones header en celular*/
+@media only screen and (max-width: 1200px) {
+  #presentacion {
+    font-size: 80%;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'main' 'aside' 'navbar'; }
+    #presentacion main {
+      justify-self: center; }
+    #presentacion section {
+      width: 100%;
+      text-align: center;
+      padding-top: 5%; } }
+
+/* Condiciones imagenes menu en celular*/
+@media only screen and (max-width: 1200px) {
+  #imagenesLugares {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    grid-row-gap: 2%; } }
+
+@media only screen and (max-width: 992px) {
+  .contenido_imagenes {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    justify-items: center;
+    grid-row-gap: 2%; } }
+
+@media only screen and (max-width: 576px) {
+  .img-fluid {
+    width: 85%; }
+  .contenido_card {
+    width: 266.66667px; }
+  /*Condiciones iframes de biografias en celular*/
+  .biografias_iframes {
+    width: 340px;
+    height: 235px; } }
+
+/*Condiciones imagenes dj de biografias en celular*/
+@media only screen and (max-width: 767px) {
+  .biografias_foto {
+    margin-left: 2%;
+    width: 47.5%;
+    height: auto; }
+  .biografias_texto {
+    margin-left: 2%; }
+  .biografias_articulos {
+    padding-bottom: 0%; }
+  .biografias_iframes {
+    padding-bottom: 5%; } }
+
+/*Barra de navegacion*/
+nav {
+  background-color: #04080F;
+  height: 10vh;
+  width: 100%;
+  color: #B3B3BA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  nav strong {
+    margin-left: 1%; }
+  nav h1 {
+    display: inline-block;
+    animation: flash infinite 4s; }
+
+/*Navbar vertical biografias*/
+.navbar_biografia {
+  height: 50%;
+  position: initial; }
