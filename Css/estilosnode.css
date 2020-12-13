@@ -34,6 +34,18 @@ body {
   justify-content: center;
   padding: 5px 0px 5px 0px; }
 
+.contenido_djs strong {
+  padding: 15px 0px 15px 0px; }
+
+.contenido_djs .contenido_imagenes {
+  padding: 2% 0% 5% 0%; }
+
+.contenido_entradas h3 {
+  padding: 20px 0px 5px 0px; }
+
+.contenido_entradas .contenido_imagenes {
+  padding: 2% 0% 5% 0%; }
+
 #tabla {
   display: flex;
   justify-content: center; }
