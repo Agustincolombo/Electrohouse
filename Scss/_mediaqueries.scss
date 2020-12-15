@@ -86,3 +86,9 @@
         padding-bottom: 5%;
     }
 }
+/*Condiciones contenido de entradas*/
+@media only screen and (max-width:576px){
+    .entradas_contenedor {
+        margin: 0%;
+    }
+}

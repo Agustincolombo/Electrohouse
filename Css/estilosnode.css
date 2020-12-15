@@ -41,14 +41,20 @@ body {
   padding: 2% 0% 5% 0%; }
 
 .contenido_entradas h3 {
-  padding: 20px 0px 5px 0px; }
+  margin: 3%; }
 
 .contenido_entradas .contenido_imagenes {
   padding: 2% 0% 5% 0%; }
 
 .contenido_entradas p {
-  margin-right: 2%;
-  position: absolute; }
+  margin: 0%; }
+
+.contenido_entradas .img-fluid {
+  max-width: 420px;
+  height: auto; }
+
+.contenido_entradas ul {
+  list-style: none; }
 
 #tabla {
   display: flex;
@@ -63,9 +69,6 @@ a:visited {
 
 a:hover {
   color: #fc0000; }
-
-h3 {
-  margin: 1%; }
 
 h4 {
   transition: transform 0.5s; }
@@ -98,15 +101,20 @@ h4:hover {
 .biografia_fila {
   margin: 0px; }
 
+/*Entradas*/
+.entradas_contenedor {
+  margin: 5%; }
+  .entradas_contenedor img {
+    width: 400px; }
+
+/*.vertical-align {
+    display:flex;
+}*/
 /*Imagenes*/
 .contenido_imagenes {
   display: flex;
   justify-content: space-evenly;
   padding: 10px 0px 50px 0px; }
-
-.img-fluid {
-  max-width: 420px;
-  height: auto; }
 
 .navbar_img {
   margin-top: 35%;
@@ -250,6 +258,11 @@ footer {
     padding-bottom: 0%; }
   .biografias_iframes {
     padding-bottom: 5%; } }
+
+/*Condiciones contenido de entradas*/
+@media only screen and (max-width: 576px) {
+  .entradas_contenedor {
+    margin: 0%; } }
 
 /*Barra de navegacion*/
 nav {
