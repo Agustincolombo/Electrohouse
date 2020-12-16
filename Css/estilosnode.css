@@ -102,14 +102,26 @@ h4:hover {
   margin: 0px; }
 
 /*Entradas*/
-.entradas_contenedor {
-  margin: 5%; }
-  .entradas_contenedor img {
-    width: 400px; }
+.entradas_contenedor .entradas_descripcion p {
+  margin: 0px; }
 
-/*.vertical-align {
-    display:flex;
-}*/
+.entradas_contenedor .entradas_descripcion strong {
+  padding-top: 100px; }
+
+.entradas_contenedor .entradas_informacion {
+  display: flex;
+  align-items: center; }
+
+.entradas_contenedor .entradas_button {
+  display: flex;
+  align-items: center; }
+  .entradas_contenedor .entradas_button .btn {
+    margin: 3% 0% 3% 0%;
+    white-space: normal; }
+
+.entradas_contenedor hr {
+  border: 1px solid #a1c6ea; }
+
 /*Imagenes*/
 .contenido_imagenes {
   display: flex;
@@ -262,7 +274,9 @@ footer {
 /*Condiciones contenido de entradas*/
 @media only screen and (max-width: 576px) {
   .entradas_contenedor {
-    margin: 0%; } }
+    margin: 0%; }
+    .entradas_contenedor img {
+      width: 400px; } }
 
 /*Barra de navegacion*/
 nav {

@@ -105,14 +105,30 @@ h4:hover {
 }
 /*Entradas*/
 .entradas_contenedor {
-    margin: 5%;
-    img{
-        width: $medidaFotoCard
+    .entradas_descripcion {
+        p {
+            margin: 0px;
+        }
+        strong  {
+            padding-top: 100px;
+        }
+    }
+    .entradas_informacion {
+        display: flex;
+        align-items: center;
+    }
+    .entradas_button{
+        display: flex;
+        align-items: center;
+        .btn {
+            margin: 3% 0% 3% 0%;
+            white-space: normal;
+        }
+    }
+    hr {
+        border: 1px solid #a1c6ea;
     }
 }
-/*.vertical-align {
-    display:flex;
-}*/
 /*Imagenes*/
 .contenido_imagenes {
     @include position-img-index;
