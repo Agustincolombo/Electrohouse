@@ -15,6 +15,7 @@ body {
   background-color: #DAE3E5;
   font-family: 'Roboto', sans-serif; }
 
+/*Condiciones del index*/
 #comunidad {
   background-image: url(../Img/fondoComunidad3.jpg);
   background-size: cover;
@@ -25,6 +26,12 @@ body {
   height: 100px;
   border-radius: 25px;
   margin: 3.5%; }
+
+h4 {
+  transition: transform 0.5s; }
+
+h4:hover {
+  transform: scale(1.35); }
 
 .contenido_card {
   width: 400px; }
@@ -56,10 +63,6 @@ body {
 .contenido_entradas ul {
   list-style: none; }
 
-#tabla {
-  display: flex;
-  justify-content: center; }
-
 a:link {
   color: #616164;
   text-decoration: none; }
@@ -69,15 +72,6 @@ a:visited {
 
 a:hover {
   color: #fc0000; }
-
-h4 {
-  transition: transform 0.5s; }
-
-h4:hover {
-  transform: scale(1.35); }
-
-.card {
-  position: initial; }
 
 /*Biografias*/
 .biografias_iframes {
@@ -102,25 +96,39 @@ h4:hover {
   margin: 0px; }
 
 /*Entradas*/
-.entradas_contenedor .entradas_descripcion p {
-  margin: 0px; }
+.entradas_carousel {
+  padding-top: 2%; }
 
-.entradas_contenedor .entradas_descripcion strong {
-  padding-top: 100px; }
+.entradas_contenedor {
+  padding: 5% 0% 5% 0%; }
+  .entradas_contenedor .row {
+    margin: 0%; }
+  .entradas_contenedor .entradas_descripcion p {
+    margin: 0px; }
+  .entradas_contenedor .entradas_descripcion strong {
+    padding-top: 100px; }
+  .entradas_contenedor .entradas_informacion {
+    display: flex;
+    align-items: center; }
+  .entradas_contenedor .entradas_button {
+    display: flex;
+    align-items: center; }
+    .entradas_contenedor .entradas_button .btn {
+      margin: 3% 0% 3% 0%;
+      white-space: normal; }
+  .entradas_contenedor hr {
+    border: 1px solid #a1c6ea; }
 
-.entradas_contenedor .entradas_informacion {
+.entradas_contacto {
   display: flex;
-  align-items: center; }
-
-.entradas_contenedor .entradas_button {
-  display: flex;
-  align-items: center; }
-  .entradas_contenedor .entradas_button .btn {
-    margin: 3% 0% 3% 0%;
-    white-space: normal; }
-
-.entradas_contenedor hr {
-  border: 1px solid #a1c6ea; }
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0% 5% 0%; }
+  .entradas_contacto .row {
+    margin: 0%; }
+  .entradas_contacto .entradas_iframe {
+    width: 400px;
+    height: 300px; }
 
 /*Imagenes*/
 .contenido_imagenes {
@@ -249,7 +257,7 @@ footer {
     grid-row-gap: 2%; } }
 
 @media only screen and (max-width: 576px) {
-  .img-fluid {
+  .contenido_imagenes .img-fluid {
     width: 85%; }
   .contenido_card {
     width: 266.66667px; }
@@ -280,7 +288,14 @@ footer {
 
 @media only screen and (min-width: 1200px) {
   .entradas_carousel {
-    width: 80%; } }
+    width: 70%; } }
+
+@media only screen and (max-width: 450px) {
+  .entradas_contacto {
+    display: block; }
+    .entradas_contacto .entradas_iframe {
+      width: 300px;
+      height: 200px; } }
 
 /*Barra de navegacion*/
 nav {
