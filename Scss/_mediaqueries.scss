@@ -38,17 +38,17 @@
     }
 }
 /* Condiciones imagenes menu en celular*/
-@media only screen and (max-width:1200px) {
-    #imagenesLugares {
-        display:grid;
+@media only screen and (max-width:992px) {
+    .contenido_imagenes_dj {
+        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: 3fr;
         justify-items: center;
         grid-row-gap: 2%;
     }
 }
-@media only screen and (max-width:992px) {
-    .contenido_imagenes {
+@media only screen and (max-width:1270px){
+    .contenido_imagenes_lugares {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 3fr;
@@ -57,11 +57,6 @@
     }
 }
 @media only screen and (max-width:576px){
-    .contenido_imagenes{
-        .img-fluid {
-            width: 85%;
-        }
-    }
     .contenido_card {
         width: $medidaFotoCardMobile;
     }

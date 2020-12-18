@@ -41,14 +41,10 @@ h4:hover {
   justify-content: center;
   padding: 5px 0px 5px 0px; }
 
-.contenido_djs strong {
-  padding: 15px 0px 15px 0px; }
-
-.contenido_djs .contenido_imagenes {
+.contenido_djs {
   padding: 2% 0% 5% 0%; }
-
-.contenido_entradas h3 {
-  margin: 3%; }
+  .contenido_djs strong {
+    padding: 15px 0px 15px 0px; }
 
 .contenido_entradas .contenido_imagenes {
   padding: 2% 0% 5% 0%; }
@@ -131,7 +127,7 @@ a:hover {
     height: 300px; }
 
 /*Imagenes*/
-.contenido_imagenes {
+.contenido_imagenes_dj, .contenido_imagenes_lugares {
   display: flex;
   justify-content: space-evenly;
   padding: 10px 0px 50px 0px; }
@@ -240,16 +236,16 @@ footer {
       padding-top: 5%; } }
 
 /* Condiciones imagenes menu en celular*/
-@media only screen and (max-width: 1200px) {
-  #imagenesLugares {
+@media only screen and (max-width: 992px) {
+  .contenido_imagenes_dj {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 3fr;
     justify-items: center;
     grid-row-gap: 2%; } }
 
-@media only screen and (max-width: 992px) {
-  .contenido_imagenes {
+@media only screen and (max-width: 1270px) {
+  .contenido_imagenes_lugares {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr;
@@ -257,8 +253,6 @@ footer {
     grid-row-gap: 2%; } }
 
 @media only screen and (max-width: 576px) {
-  .contenido_imagenes .img-fluid {
-    width: 85%; }
   .contenido_card {
     width: 266.66667px; }
   /*Condiciones iframes de biografias en celular*/

@@ -39,17 +39,12 @@ h4:hover {
     padding: 5px 0px 5px 0px;
 }
 .contenido_djs {
+    padding: 2% 0% 5% 0%;
     strong {
         padding: 15px 0px 15px 0px;
     }
-    .contenido_imagenes{
-        padding: 2% 0% 5% 0%;
-    }
 }
 .contenido_entradas {
-    h3 {
-        margin: 3%;
-    }
     .contenido_imagenes {
         padding: 2% 0% 5% 0%;
     }
@@ -143,7 +138,7 @@ a:hover {
     }
 }
 /*Imagenes*/
-.contenido_imagenes {
+.contenido_imagenes_dj, .contenido_imagenes_lugares {
     @include position-img-index;
 }
 .navbar_img {
