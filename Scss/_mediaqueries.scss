@@ -60,6 +60,12 @@
     .contenido_card {
         width: $medidaFotoCardMobile;
     }
+    .contenido_imagenes_lugares{
+        .img-fluid{
+            max-width: 350px;
+            height: auto;
+        }
+    }
 /*Condiciones iframes de biografias en celular*/
     .biografias_iframes {
         width: 340px;

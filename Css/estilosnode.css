@@ -255,6 +255,9 @@ footer {
 @media only screen and (max-width: 576px) {
   .contenido_card {
     width: 266.66667px; }
+  .contenido_imagenes_lugares .img-fluid {
+    max-width: 350px;
+    height: auto; }
   /*Condiciones iframes de biografias en celular*/
   .biografias_iframes {
     width: 340px;
