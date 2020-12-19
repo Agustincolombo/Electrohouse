@@ -137,6 +137,16 @@ a:hover {
         height: 300px;
     }
 }
+/*Informacion (Html Nosotros)*/
+header {
+    .nosotros_titulo {
+        font-size: 300%;
+        text-align: center;
+    }
+}
+.nosotros_fondo {
+    background-color: #a1c6ea;
+}
 /*Imagenes*/
 .contenido_imagenes_dj, .contenido_imagenes_lugares {
     @include position-img-index;
