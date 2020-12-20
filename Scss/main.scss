@@ -8,12 +8,13 @@ nav {
     background-color: #04080F;
     height:10vh;
     width:100%;
-    color:$colorDeFuente;
+    color:#b3b3ba;
     display: flex;
     justify-content: space-between;
     align-items: center ;
-    strong {
+    span {
         margin-left: 1%;
+        display: inline-block;
     }
     h1 {
         display: inline-block;
@@ -22,6 +23,6 @@ nav {
 }
 /*Navbar vertical biografias*/
 .navbar_biografia {
-    height: 50%;
+    height:80% ;
     position: initial;
 }

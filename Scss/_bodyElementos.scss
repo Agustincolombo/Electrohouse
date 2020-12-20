@@ -9,7 +9,8 @@
 }
 /*Condiciones del body y elementos*/
 body {
-    background-color:#DAE3E5;
+    background-color: #04080F;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 /*Condiciones del index*/
@@ -21,6 +22,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100px;
+    border:$bordeblanco  ;
     border-radius: 25px;
     margin: 3.5%;
 }
@@ -30,50 +32,52 @@ h4 {
 h4:hover {
    transform: scale(1.35);
 }
-.contenido_card {
-    width:$medidaFotoCard;
-}
-.contenido_subtitulo {
-    display: flex;
-    justify-content: center;
-    padding: 5px 0px 5px 0px;
-}
 .contenido_djs {
     padding: 2% 0% 5% 0%;
     strong {
         padding: 15px 0px 15px 0px;
     }
+    .contenido_card {
+        width:$medidaFotoCard;
+        .card-text{
+            text-align: center;
+        }
+    }
+    .contenido_subtitulo {
+        display: flex;
+        justify-content: center;
+        padding: 5px 0px 5px 0px;
+    }
 }
 .contenido_entradas {
-    .contenido_imagenes {
-        padding: 2% 0% 5% 0%;
-    }
-    p {
-        margin: 0%;
+    .contenido_info_entradas{
+        padding-top: 2%;
+        p {
+            margin: 0%;
+        }
     }
     .img-fluid {
         max-width: 420px;
         height: auto;
+        border: $bordeblanco;
+        border-radius: 5px;
     }
     ul {
         list-style: none;
     }
 }
+/*Condiciones links*/
 a:link {
-    color: #616164;
+    color: white;
     text-decoration:none;
 }
 a:visited {
-    color:  #616164;
+    color:  white;
 }
 a:hover {
     color: rgb(252, 0, 0);
 }
 /*Biografias*/
-.biografias_iframes{
-    width:420px;
-    height:315px;
-}
 .biografias_cont_iframes {
     display: flex;
     justify-content: center;
@@ -82,14 +86,20 @@ a:hover {
     padding:0px;
     position: initial;
 }
-.biografias_articulos {
-    padding-bottom:5%;
-}
-.biografias_articulos_claro {
-    padding-bottom:5%;
-}
 .biografia_fila {
     margin: 0px;
+    .biografias_articulos {
+        padding-bottom:5%;
+        .biografias_iframes{
+            width:420px;
+            height:315px;
+        }
+    }
+}
+.biografias_paginas {
+    .page-link {
+        background-color: black;
+    }
 }
 /*Entradas*/
 .entradas_carousel {
@@ -121,7 +131,7 @@ a:hover {
         }
     }
     hr {
-        border: 1px solid #a1c6ea;
+        border: $bordeblanco;
     }
 }
 .entradas_contacto{
@@ -153,6 +163,9 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    header{
+        position: relative;
+    }
     .nosotros_informacion {
         position: relative;
         font-size: 200%;
@@ -162,6 +175,10 @@ header {
         position: relative;
         p{
             color: white;
+            margin: 0%;
+        }
+        .navbar_listas{
+            padding: 0%;
             margin: 0%;
         }
         .navbar_img{
@@ -189,4 +206,6 @@ header {
 .biografias_foto {
     width: $medidaFotoBio;
     height: auto;
+    border: $bordeblanco;
+    box-shadow:0px 10px 13px -3px rgba(255,255,255,0.4);
 }

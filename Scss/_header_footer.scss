@@ -7,11 +7,16 @@
     grid-template-areas: 
         'main aside'
         'navbar navbar';
-    background-color: #a1c6ea;
     padding-bottom: 3%;
+    background-image: url(../Img/fondo_tomorrowland.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
     main {
         grid-area: main;
         justify-self: flex-end;
+        position: relative;
     }
     section {
         grid-area: aside;
@@ -21,16 +26,28 @@
         width: 60%;
         animation: fadeInRight;
         animation-duration: 1s;
+        position: relative;
     }
     img {
         width: 350px;
         height: 350px;
         animation:fadeInLeft;
         animation-duration: 1s;
+        position: relative;
     }
     navbar {
         grid-area: navbar;
+        position: relative;
     }
+}
+#presentacion:before {
+    content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.8);
 }
 .navbar_item {
     display: inline-block;
@@ -42,25 +59,24 @@
     .nav{
         margin: 3%;
         padding:10px 20px 10px 20px;
-        border:1px solid white;
+        border:$bordeblanco;
         border-radius: 10px;
         background-color: rgba(18,18,18,0.95);
-        box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+        box-shadow: 0px 10px 13px -3px rgba(255, 255, 255, 0.4);
         .nav-link {
             color: white;
         }
         .active {
             background-color: rgba(18,18,18,0.95);
             color: white;
-            border:1px solid white;
+            border:$bordeblanco;
         }
     }
 }
 /*Grid Footer*/
 footer {
-    color:#B3B3BA;
-    /*background-color: #17a2b8;*/
-    background-color: #507dbc;
+    color:white;
+    background-color: #343a40;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,0.4fr);

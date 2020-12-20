@@ -89,6 +89,14 @@
         padding-bottom: 5%;
     }
 }
+/*Condiciones navbar vertical biografias*/
+@media only screen and (max-width:991px){
+    .navbar_biografia {
+        padding-left: 15px;
+        margin-bottom: 1rem;
+        flex-flow: wrap row !important;
+    }
+}
 /*Condiciones contenido de entradas*/
 @media only screen and (max-width:576px){
     .entradas_contenedor {
@@ -109,6 +117,17 @@
         .entradas_iframe {
             width: 300px; 
             height: 200px;
+        }
+    }
+}
+/*Condiciones html nosotros*/
+@media only screen and (max-width:720px) {
+    .nosotros_fondo {
+        .nosotros_titulo{
+            font-size: 280%;
+        }
+        .nosotros_informacion{
+            font-size:180%;
         }
     }
 }
