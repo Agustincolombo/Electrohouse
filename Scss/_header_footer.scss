@@ -7,8 +7,8 @@
     grid-template-areas: 
         'main aside'
         'navbar navbar';
-    /*background-color: #F0E68C;*/
     background-color: #a1c6ea;
+    padding-bottom: 3%;
     main {
         grid-area: main;
         justify-self: flex-end;
@@ -38,14 +38,23 @@
 .header_item {
     display: inline-block;
 }
-.header_lista {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px 20px 40px 20px;
-    padding:10px 20px 10px 20px;
-    border:outset #507dbc;
-    background-color: #bbd1ea;
-    box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+.navbar_contenedor {
+    .nav{
+        margin: 3%;
+        padding:10px 20px 10px 20px;
+        border:1px solid white;
+        border-radius: 10px;
+        background-color: rgba(18,18,18,0.95);
+        box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+        .nav-link {
+            color: white;
+        }
+        .active {
+            background-color: rgba(18,18,18,0.95);
+            color: white;
+            border:1px solid white;
+        }
+    }
 }
 /*Grid Footer*/
 footer {
