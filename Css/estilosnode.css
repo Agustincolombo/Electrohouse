@@ -144,6 +144,13 @@ header .nosotros_titulo {
     position: relative;
     font-size: 200%;
     color: white; }
+  .nosotros_fondo .nosotros_redes {
+    position: relative; }
+    .nosotros_fondo .nosotros_redes p {
+      color: white;
+      margin: 0%; }
+    .nosotros_fondo .nosotros_redes .navbar_img {
+      margin: 0%; }
 
 .nosotros_fondo:before {
   content: '';

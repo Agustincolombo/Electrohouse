@@ -158,6 +158,16 @@ header {
         font-size: 200%;
         color: white;
     }
+    .nosotros_redes {
+        position: relative;
+        p{
+            color: white;
+            margin: 0%;
+        }
+        .navbar_img{
+            margin: 0%;
+        }
+    }
 }
 .nosotros_fondo:before {
     content: '';
