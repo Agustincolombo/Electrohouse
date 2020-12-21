@@ -276,15 +276,19 @@ footer {
 @media only screen and (max-width: 576px) {
   nav {
     font-size: 80%; }
-    nav strong {
-      width: 30%;
-      margin-left: 5%; }
   footer {
     font-size: 80%; }
   .navbar_img {
     width: 25px; }
   .header_navbar {
     font-size: 80%; } }
+
+@media only screen and (max-width: 405px) {
+  nav span {
+    width: 20%;
+    margin-left: 5%; }
+  nav .navbar_listas {
+    padding-left: 0px; } }
 
 /*Condiciones header en celular*/
 @media only screen and (max-width: 1200px) {
@@ -318,8 +322,8 @@ footer {
     grid-row-gap: 2%; } }
 
 @media only screen and (max-width: 576px) {
-  .contenido_card {
-    width: 200px; }
+  .contenido_imagenes_dj .contenido_card {
+    width: 266.66667px; }
   .contenido_imagenes_lugares .img-fluid {
     max-width: 350px;
     height: auto; }

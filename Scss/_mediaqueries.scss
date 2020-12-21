@@ -1,11 +1,7 @@
 /*Condiciones navegador en celular*/
 @media only screen and (max-width:576px){
     nav {
-        font-size: $porcentajeFuenteMobile ;
-        strong {
-            width: 30%;
-            margin-left: 5%;
-        }
+        font-size: $porcentajeFuenteMobile;
     }
     footer {
         font-size: $porcentajeFuenteMobile;
@@ -15,6 +11,17 @@
     }
     .header_navbar {
         font-size: $porcentajeFuenteMobile;
+    }
+}
+@media only screen and (max-width:405px){
+    nav {    
+        span {
+            width: 20%;
+            margin-left: 5%;
+        }
+        .navbar_listas {
+            padding-left: 0px;
+        }
     }
 }
 /*Condiciones header en celular*/
@@ -56,12 +63,14 @@
         grid-row-gap: 2%;
     }
 }
-@media only screen and (max-width:576px){
-    .contenido_card {
-        width: $medidaFotoCardMobile;
+@media only screen and (max-width:576px) {
+    .contenido_imagenes_dj {
+        .contenido_card {
+            width: $medidaFotoCardMobile;
+        }
     }
     .contenido_imagenes_lugares{
-        .img-fluid{
+        .img-fluid {
             max-width: 350px;
             height: auto;
         }
