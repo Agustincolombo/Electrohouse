@@ -319,7 +319,7 @@ footer {
 
 @media only screen and (max-width: 576px) {
   .contenido_card {
-    width: 266.66667px; }
+    width: 200px; }
   .contenido_imagenes_lugares .img-fluid {
     max-width: 350px;
     height: auto; }
