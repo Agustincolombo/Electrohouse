@@ -11,7 +11,8 @@ nav {
     color:#b3b3ba;
     display: flex;
     justify-content: space-between;
-    align-items: center ;
+    align-items: center;
+    border-bottom: $bordeblanco;
     span {
         margin-left: 1%;
         display: inline-block;

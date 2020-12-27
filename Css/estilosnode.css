@@ -152,7 +152,8 @@ header .nosotros_titulo {
     position: relative; }
     .nosotros_fondo .nosotros_redes p {
       color: white;
-      margin: 0%; }
+      margin: 0%;
+      font-size: 125%; }
     .nosotros_fondo .nosotros_redes .navbar_listas {
       padding: 0%;
       margin: 0%; }
@@ -276,10 +277,10 @@ footer {
 @media only screen and (max-width: 576px) {
   nav {
     font-size: 80%; }
+    nav .navbar_img {
+      width: 25px; }
   footer {
     font-size: 80%; }
-  .navbar_img {
-    width: 25px; }
   .header_navbar {
     font-size: 80%; } }
 
@@ -385,7 +386,8 @@ nav {
   color: #b3b3ba;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border-bottom: 1px solid white; }
   nav span {
     margin-left: 1%;
     display: inline-block; }

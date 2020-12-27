@@ -2,12 +2,12 @@
 @media only screen and (max-width:576px){
     nav {
         font-size: $porcentajeFuenteMobile;
+        .navbar_img {
+            width: $medidaFotoNavMobile;
+        }
     }
     footer {
         font-size: $porcentajeFuenteMobile;
-    }
-    .navbar_img {
-        width: $medidaFotoNavMobile;
     }
     .header_navbar {
         font-size: $porcentajeFuenteMobile;
