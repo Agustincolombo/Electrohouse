@@ -180,6 +180,7 @@ header {
         }
         .navbar_listas{
             padding: 0%;
+            padding-bottom: 15px;
             margin: 0%;
         }
         .navbar_img{
@@ -195,6 +196,34 @@ header {
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.6);
+}
+.nosotros_final{
+    .nosotros_invitacion{
+        text-align: center;
+        font-size: 200%;
+        margin: 2%
+    }
+    .nosotros_equipo{
+        @include position-img-index;
+        padding-bottom: 0%;
+        ul{
+            list-style: none;
+            display: inline-flex;
+            padding: 0%;
+            margin: 0%;
+            justify-content: center;
+            li{
+                margin: 3%;
+                p{
+                    text-align: center;
+                    padding-top: 10px;
+                }
+                .nosotros_fotos{
+                    max-width: 350px;
+                }
+            }
+        }
+    }
 }
 /*Imagenes*/
 .contenido_imagenes_dj, .contenido_imagenes_lugares {

@@ -156,6 +156,7 @@ header .nosotros_titulo {
       font-size: 125%; }
     .nosotros_fondo .nosotros_redes .navbar_listas {
       padding: 0%;
+      padding-bottom: 15px;
       margin: 0%; }
     .nosotros_fondo .nosotros_redes .navbar_img {
       margin: 0%; }
@@ -168,6 +169,30 @@ header .nosotros_titulo {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6); }
+
+.nosotros_final .nosotros_invitacion {
+  text-align: center;
+  font-size: 200%;
+  margin: 2%; }
+
+.nosotros_final .nosotros_equipo {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0px 50px 0px;
+  padding-bottom: 0%; }
+  .nosotros_final .nosotros_equipo ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center; }
+    .nosotros_final .nosotros_equipo ul li {
+      margin: 3%; }
+      .nosotros_final .nosotros_equipo ul li p {
+        text-align: center;
+        padding-top: 10px; }
+      .nosotros_final .nosotros_equipo ul li .nosotros_fotos {
+        max-width: 350px; }
 
 /*Imagenes*/
 .contenido_imagenes_dj, .contenido_imagenes_lugares {
@@ -347,11 +372,16 @@ footer {
     padding-bottom: 5%; } }
 
 /*Condiciones navbar vertical biografias*/
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) and (min-width: 540px) {
   .navbar_biografia {
     padding-left: 15px;
     margin-bottom: 1rem;
     flex-flow: wrap row !important; } }
+
+@media only screen and (max-width: 539px) {
+  .navbar_biografia {
+    padding-left: 15px;
+    line-height: 2.5; } }
 
 /*Condiciones contenido de entradas*/
 @media only screen and (max-width: 576px) {
@@ -377,6 +407,20 @@ footer {
     font-size: 280%; }
   .nosotros_fondo .nosotros_informacion {
     font-size: 180%; } }
+
+@media only screen and (max-width: 1200px) {
+  .nosotros_final .nosotros_invitacion {
+    margin: 6%; }
+  .nosotros_final .nosotros_equipo .nosotros_listas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    justify-items: center;
+    grid-row-gap: 2%; } }
+
+@media only screen and (max-width: 576px) {
+  .nosotros_final .nosotros_equipo .nosotros_listas .nosotros_fotos {
+    max-width: 300px; } }
 
 /*Barra de navegacion*/
 nav {

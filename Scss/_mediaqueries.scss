@@ -99,11 +99,17 @@
     }
 }
 /*Condiciones navbar vertical biografias*/
-@media only screen and (max-width:991px){
+@media only screen and (max-width: 991px) and (min-width: 540px){
     .navbar_biografia {
         padding-left: 15px;
         margin-bottom: 1rem;
         flex-flow: wrap row !important;
+    }
+}
+@media only screen and (max-width:539px){
+    .navbar_biografia{
+        padding-left: 15px;
+        line-height: 2.5;
     }
 }
 /*Condiciones contenido de entradas*/
@@ -137,6 +143,33 @@
         }
         .nosotros_informacion{
             font-size:180%;
+        }
+    }
+}
+@media only screen and (max-width:1200px){
+    .nosotros_final{
+        .nosotros_invitacion{
+            margin: 6%;
+        }
+        .nosotros_equipo{
+            .nosotros_listas{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 3fr;
+                justify-items: center;
+                grid-row-gap: 2%;
+            }
+        }
+    }
+}
+@media only screen and (max-width:576px){
+    .nosotros_final{
+        .nosotros_equipo{
+            .nosotros_listas{
+                .nosotros_fotos{
+                    max-width: 300px;
+                }
+            }
         }
     }
 }
