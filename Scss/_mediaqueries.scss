@@ -135,6 +135,27 @@
         }
     }
 }
+/*Condiciones html comunidad*/
+@media only screen and (min-width:1200px){
+    .comunidad_playlist {
+        li{
+            iframe{
+                width:380px;
+                height:420px;
+            }
+        }
+    }
+}
+@media only screen and (max-width:991px){
+    .comunidad_playlist{
+        li{
+            iframe{
+                width: 240px;
+                height: 320px;
+            }
+        }
+    }
+}
 /*Condiciones html nosotros*/
 @media only screen and (max-width:720px) {
     .nosotros_fondo {

@@ -147,6 +147,21 @@ a:hover {
         height: 300px;
     }
 }
+/*Elementos Comunidad*/
+.comunidad_playlist{
+    p{
+        font-size: 225%;
+    }
+    ul{
+        list-style: none;
+        display:flex;
+        justify-content: center;
+        padding:0%;
+        .comunidad_lista_med{
+            margin: 0 1.5%;
+        }
+    }
+}
 /*Informacion (Html Nosotros)*/
 header {
     .nosotros_titulo {

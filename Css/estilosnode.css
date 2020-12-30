@@ -128,6 +128,18 @@ a:hover {
     width: 400px;
     height: 300px; }
 
+/*Elementos Comunidad*/
+.comunidad_playlist p {
+  font-size: 225%; }
+
+.comunidad_playlist ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0%; }
+  .comunidad_playlist ul .comunidad_lista_med {
+    margin: 0 1.5%; }
+
 /*Informacion (Html Nosotros)*/
 header .nosotros_titulo {
   font-size: 300%;
@@ -400,6 +412,17 @@ footer {
     .entradas_contacto .entradas_iframe {
       width: 300px;
       height: 200px; } }
+
+/*Condiciones html comunidad*/
+@media only screen and (min-width: 1200px) {
+  .comunidad_playlist li iframe {
+    width: 380px;
+    height: 420px; } }
+
+@media only screen and (max-width: 991px) {
+  .comunidad_playlist li iframe {
+    width: 240px;
+    height: 320px; } }
 
 /*Condiciones html nosotros*/
 @media only screen and (max-width: 720px) {
