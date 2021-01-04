@@ -424,6 +424,16 @@ footer {
     width: 240px;
     height: 320px; } }
 
+@media only screen and (max-width: 768px) {
+  .comunidad_playlist ul {
+    display: grid;
+    justify-content: center; }
+    .comunidad_playlist ul .comunidad_lista_med {
+      margin: 0 0%; }
+    .comunidad_playlist ul li iframe {
+      width: 85vw;
+      height: 40vh; } }
+
 /*Condiciones html nosotros*/
 @media only screen and (max-width: 720px) {
   .nosotros_fondo .nosotros_titulo {

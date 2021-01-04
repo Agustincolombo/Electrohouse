@@ -156,6 +156,23 @@
         }
     }
 }
+@media only screen and (max-width:768px){
+    .comunidad_playlist{
+        ul{
+        display: grid;
+        justify-content: center;
+            .comunidad_lista_med{
+                margin: 0 0%;
+            }
+            li{
+                iframe{
+                    width: 85vw;
+                    height: 40vh;
+                }
+            }
+        }
+    }
+}
 /*Condiciones html nosotros*/
 @media only screen and (max-width:720px) {
     .nosotros_fondo {
