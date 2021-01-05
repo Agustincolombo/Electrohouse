@@ -43,10 +43,10 @@
         <navbar class='navbar_contenedor'>
             <ul class='nav nav-justified nav-pills'>
                 <li class='nav-item'>
-                    <a class='nav-link' href='../index.html'>Menu</a>
+                    <a class='nav-link' href='../index.html'>Menú</a>
                 </li>
                 <li class='nav-item'>
-                    <a class='nav-link' href='biografias.html'>Biografias</a>
+                    <a class='nav-link' href='biografias.html'>Biografías</a>
                 </li>
                 <li class='nav-item'>
                     <a class='nav-link active' href='entradas.html'>Entradas</a>
@@ -60,26 +60,50 @@
             </ul>
         </navbar>
 <!--Lugares mas populares-->
-        <p class='titulo'>Lugares populares</p>
+        <p class='titulo'>Fiestas populares</p>
         <div id="carouselExampleIndicators" class="carousel entradas_carousel slide container" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100 img-fluid" src="../Img/Forja.jpg" alt="First slide">
+                <img class="d-block w-100 img-fluid" src="../Img/Fotos entradas/Buenpastor.png" alt="First slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, saepe?</h5>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                  </div>
+                    <h5>Artfaq</h5>
+                    <p>Paseo del Buen Pastor - Córdoba</p>
+                </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="../Img/La_estacion.jpg" alt="Second slide">
+                <img class="d-block w-100 img-fluid" src="../Img/Fotos entradas/charlotte-pacoosuna.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Charlotte De Witte - Paco Osuna</h5>
+                    <p>Forja Indoor - Córdoba</p>
+                </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100 img-fluid" src="../Img/orfeoSuperDomo.jpg" alt="Third slide">
+                <img class="d-block w-100 img-fluid" src="../Img/Fotos entradas/Forja-cattaneo.jpg" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Hernan Cattaneo</h5>
+                    <p>Forja Indoor - Córdoba</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="../Img/Fotos entradas/saffe-basement.jpg" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Sergio Saffe</h5>
+                    <p>Basement Club - Córdoba</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="../Img/Fotos entradas/Lafabrica.jpg" alt="Fourth slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Mathame</h5>
+                    <p>La Fábrica - Córdoba</p>
+                </div>
             </div>
             </div>
                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -93,16 +117,17 @@
         </div>
 <!--Imagenes e informacion de entradas-->
         <main class="entradas_contenedor container">
-            <article class="row">
+            <article class="row" id='entrada1'>
                 <section class="col-sm-12 col-md-10 entradas_informacion">
                     <div class="col-sm-6 nopadding_columnas">
                         <img src='../Img/orfeoSuperDomo.jpg' class="img-fluid">
                     </div>
                     <div class="col-sm-6 entradas_descripcion">
-                        <p>Hernan Cattaneo - Nick Warren</p>
-                        <p>Forja Indoor</p>
+                        <p>Jeremy Olander - Sebastien Leger</p>
+                        <p>Orfeo Superdomo</p>
                         <p>Buenas noches producciones</p>
-                        <strong>Dec 15, 2020</strong>
+                        <p>Costo: $1800</p>
+                        <strong>15 de Diciembre, 2020</strong>
                     </div>			
                 </section>
                 <section class="col-sm-12 col-md-2 entradas_button">
@@ -110,16 +135,17 @@
                 </section>
             </article>
             <hr>         
-            <article class="row">
+            <article class="row" id='entrada2'>
                 <section class="col-sm-12 col-md-10 entradas_informacion">
                     <div class="col-sm-6 nopadding_columnas">
-                        <img src='../Img/orfeoSuperDomo.jpg' class="img-fluid">
+                        <img src='../Img/Fotos entradas/Laestacion.jpg' class="img-fluid">
                     </div>
                     <div class="col-sm-6 entradas_descripcion">
-                        <p>Hernan Cattaneo - Nick Warren</p>
-                        <p>Forja Indoor</p>
+                        <p>Green Velvet - Nico Hamuy</p>
+                        <p>La estacion</p>
                         <p>Buenas noches producciones</p>
-                        <strong>Dec 15, 2020</strong>
+                        <p>Costo: $2200</p>
+                        <strong>18 de Septiembre, 2020</strong>
                     </div>			
                 </section>
                 <section class="col-sm-12 col-md-2 entradas_button">
@@ -127,16 +153,17 @@
                 </section>
             </article>
             <hr>            
-            <article class="row">
+            <article class="row" id='entrada3'>
                 <section class="col-sm-12 col-md-10 entradas_informacion">
                     <div class="col-sm-6 nopadding_columnas">
-                        <img src='../Img/orfeoSuperDomo.jpg' class="img-fluid">
+                        <img src='../Img/Forja.jpg' class="img-fluid">
                     </div>
                     <div class="col-sm-6 entradas_descripcion">
                         <p>Hernan Cattaneo - Nick Warren</p>
                         <p>Forja Indoor</p>
                         <p>Buenas noches producciones</p>
-                        <strong>Dec 15, 2020</strong>
+                        <p>Costo: $3500</p>
+                        <strong>15 de Enero, 2021</strong>
                     </div>			
                 </section>
                 <section class="col-sm-12 col-md-2 entradas_button">

@@ -172,6 +172,20 @@
             }
         }
     }
+    .comunidad_djs{
+        ul{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 3fr;
+            justify-items: center;
+            grid-row-gap: 2%;
+            li{
+                .comunidad_imagen{
+                    width: 65vw;
+                }
+            }
+        }
+    }
 }
 /*Condiciones html nosotros*/
 @media only screen and (max-width:720px) {

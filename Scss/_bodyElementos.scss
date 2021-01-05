@@ -66,6 +66,10 @@ h4:hover {
         list-style: none;
     }
 }
+.contenido_imagen_entrada:hover{
+    animation-name: pulse;
+    animation-duration: 2s;
+}
 /*Condiciones links*/
 a:link {
     color: white;
@@ -159,6 +163,32 @@ a:hover {
         padding:0%;
         .comunidad_lista_med{
             margin: 0 1.5%;
+        }
+    }
+}
+#titulo_dj{
+    font-size: 225%
+}
+.comunidad_djs{
+    @include position-img-index;
+    ul{
+        list-style: none;
+        display:flex;
+        padding: 0%;
+        margin: 0%;
+        justify-content: center;
+        li{
+            .comunidad_imagen{
+                width: 27vw;
+                border: $bordeblanco;
+            }
+            p{
+                text-align: center;
+                margin: 3% 0;
+            }
+        }
+        .lista_medio{
+            margin: 0 3%;
         }
     }
 }
