@@ -355,6 +355,11 @@ footer {
 .detalleContacto3 {
   margin-right: 5%; }
 
+/*Condiciones presentacion en pantallas grandes*/
+@media only screen and (min-width: 1525px) {
+  #presentacion section {
+    line-height: 1.7; } }
+
 /*Condiciones navegador en celular*/
 @media only screen and (max-width: 576px) {
   nav {
@@ -489,10 +494,11 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .comunidad_setsemana img {
-    height: 125vh; }
+    height: 125vh;
+    margin: 0%; }
   .comunidad_setsemana iframe {
     width: 55vw;
-    height: 60vh; } }
+    height: 55vh; } }
 
 /*Condiciones html nosotros*/
 @media only screen and (max-width: 720px) {
