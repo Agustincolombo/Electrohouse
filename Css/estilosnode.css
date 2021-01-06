@@ -8,7 +8,13 @@
   font-family: 'Roboto Slab', serif; }
 
 .subtitulo {
-  font-size: 120%; }
+  font-size: 120%;
+  font-family: 'Roboto Slab', serif; }
+
+.titulo_grande {
+  text-align: center;
+  font-size: 225%;
+  font-family: 'Roboto Slab', serif; }
 
 /*Condiciones del body y elementos*/
 body {
@@ -133,9 +139,6 @@ a:hover {
     height: 300px; }
 
 /*Elementos Comunidad*/
-.comunidad_playlist p {
-  font-size: 225%; }
-
 .comunidad_playlist ul {
   list-style: none;
   display: flex;
@@ -144,8 +147,24 @@ a:hover {
   .comunidad_playlist ul .comunidad_lista_med {
     margin: 0 1.5%; }
 
-#titulo_dj {
-  font-size: 225%; }
+.comunidad_setsemana {
+  position: relative; }
+  .comunidad_setsemana p {
+    margin: 0%; }
+  .comunidad_setsemana iframe {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60vw;
+    height: 45vh; }
+  .comunidad_setsemana img {
+    position: relative;
+    margin-top: 5%;
+    width: 100vw;
+    height: 100vh; }
 
 .comunidad_djs {
   display: flex;
@@ -392,9 +411,9 @@ footer {
     max-width: 350px;
     height: auto; }
   /*Condiciones iframes de biografias en celular*/
-  .biografias_iframes {
-    width: 340px;
-    height: 235px; } }
+  .biografia_fila .biografias_articulos .biografias_iframes {
+    width: 90vw;
+    height: 315px; } }
 
 /*Condiciones imagenes dj de biografias en celular*/
 @media only screen and (max-width: 767px) {
@@ -466,7 +485,14 @@ footer {
     justify-items: center;
     grid-row-gap: 2%; }
     .comunidad_djs ul li .comunidad_imagen {
-      width: 65vw; } }
+      width: 50vw; } }
+
+@media only screen and (min-width: 768px) {
+  .comunidad_setsemana img {
+    height: 125vh; }
+  .comunidad_setsemana iframe {
+    width: 55vw;
+    height: 60vh; } }
 
 /*Condiciones html nosotros*/
 @media only screen and (max-width: 720px) {

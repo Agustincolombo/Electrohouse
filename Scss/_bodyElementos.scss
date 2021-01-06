@@ -6,6 +6,12 @@
 }
 .subtitulo {
     font-size:120%;
+    font-family:'Roboto Slab', serif;
+}
+.titulo_grande {
+    text-align:center;
+    font-size: 225%;
+    font-family:'Roboto Slab', serif;
 }
 /*Condiciones del body y elementos*/
 body {
@@ -153,9 +159,6 @@ a:hover {
 }
 /*Elementos Comunidad*/
 .comunidad_playlist{
-    p{
-        font-size: 225%;
-    }
     ul{
         list-style: none;
         display:flex;
@@ -166,8 +169,27 @@ a:hover {
         }
     }
 }
-#titulo_dj{
-    font-size: 225%
+.comunidad_setsemana{ 
+    position: relative;
+    p{
+        margin: 0%;
+    }
+    iframe {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:0;
+        bottom: 0;
+        margin: auto;
+        width: 60vw;
+        height: 45vh;
+    }
+    img{
+        position: relative;
+        margin-top: 5%;
+        width: 100vw;
+        height: 100vh;
+    }
 }
 .comunidad_djs{
     @include position-img-index;
