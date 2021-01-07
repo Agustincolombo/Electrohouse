@@ -139,6 +139,34 @@ a:hover {
     height: 300px; }
 
 /*Elementos Comunidad*/
+.presentacion_comunidad {
+  background-image: url(../Img/presentacioncomunidad.jpg);
+  width: 100%;
+  height: 85vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .presentacion_comunidad .presentacion_titulo p {
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    font-size: 400%;
+    text-align: center; }
+
+.presentacion_comunidad::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6); }
+
 .comunidad_playlist ul {
   list-style: none;
   display: flex;
@@ -163,7 +191,7 @@ a:hover {
   .comunidad_setsemana img {
     position: relative;
     margin-top: 5%;
-    width: 100vw;
+    width: 100%;
     height: 100vh; }
 
 .comunidad_djs {
@@ -499,6 +527,10 @@ footer {
   .comunidad_setsemana iframe {
     width: 55vw;
     height: 55vh; } }
+
+@media only screen and (max-width: 480px) {
+  .presentacion_comunidad .presentacion_titulo p {
+    font-size: 350%; } }
 
 /*Condiciones html nosotros*/
 @media only screen and (max-width: 720px) {

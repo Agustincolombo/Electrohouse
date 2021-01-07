@@ -211,7 +211,15 @@
         }
     }
 }
-
+@media only screen and (max-width:480px){
+    .presentacion_comunidad {
+        .presentacion_titulo{
+            p{
+                font-size: 350%;
+            }
+        }
+    }
+}
 /*Condiciones html nosotros*/
 @media only screen and (max-width:720px) {
     .nosotros_fondo {
